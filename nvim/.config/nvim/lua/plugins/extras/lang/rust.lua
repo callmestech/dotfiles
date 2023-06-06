@@ -8,6 +8,7 @@ return { -- extend auto completion
         config = true,
       },
     },
+
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local cmp = require("cmp")
@@ -15,7 +16,9 @@ return { -- extend auto completion
         name = "crates",
       } }))
     end,
-  }, -- add rust to treesitter
+  },
+
+  -- add rust to treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
@@ -23,7 +26,9 @@ return { -- extend auto completion
         vim.list_extend(opts.ensure_installed, { "ron", "rust", "toml" })
       end
     end,
-  }, -- correctly setup mason lsp extensions
+  },
+
+  -- correctly setup mason lsp extensions
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
@@ -31,7 +36,9 @@ return { -- extend auto completion
         vim.list_extend(opts.ensure_installed, { "rust-analyzer", "taplo" })
       end
     end,
-  }, -- correctly setup lspconfig
+  },
+
+  -- correctly setup lspconfig
   {
     "neovim/nvim-lspconfig",
     dependencies = { "simrat39/rust-tools.nvim" },
@@ -119,7 +126,9 @@ return { -- extend auto completion
         end,
       },
     },
-  }, -- neotest setup
+  },
+
+  -- neotest setup
   {
     "nvim-neotest/neotest",
     optional = true,
