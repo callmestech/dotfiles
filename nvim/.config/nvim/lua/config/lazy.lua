@@ -14,12 +14,15 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
     -- lazyvim dap core extension modules
     { import = "lazyvim.plugins.extras.dap.core" },
     -- lazyvim UI extension modules
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- -- lazyvim test core extension modules
     { import = "lazyvim.plugins.extras.test.core" },
+    -- -- mini-files nvim
+    { import = "lazyvim.plugins.extras.editor.mini-files" },
     -- import/override with your plugins
     { import = "plugins" },
   },
