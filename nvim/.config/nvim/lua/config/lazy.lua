@@ -19,6 +19,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.python" },
     { import = "lazyvim.plugins.extras.lang.rust" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
+    { import = "lazyvim.plugins.extras.lang.scala" },
     -- lazyvim dap core extension modules
     { import = "lazyvim.plugins.extras.dap.core" },
     -- lazyvim UI extension modules
@@ -27,8 +28,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.test.core" },
     -- -- mini-files nvim
     { import = "lazyvim.plugins.extras.editor.mini-files" },
+    -- -- copilot nvim
+    { import = "lazyvim.plugins.extras.coding.copilot" },
     -- import/override with your plugins
-    { import = "plugins.extras.lang.scala" },
   },
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
