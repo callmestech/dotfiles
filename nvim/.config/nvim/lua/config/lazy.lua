@@ -29,7 +29,8 @@ require("lazy").setup({
     -- -- mini-files nvim
     { import = "lazyvim.plugins.extras.editor.mini-files" },
     -- -- copilot nvim
-    { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.ai.copilot" },
+    { import = "lazyvim.plugins.extras.ai.copilot-chat" },
     -- import/override with your plugins
   },
   defaults = {
