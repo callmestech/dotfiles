@@ -56,7 +56,7 @@ else
 fi
 
 # Install everything from a Brewfile
-BREWFILE_PATH="$DOTFILES_DIR/brew/.config/Brewfile"
+BREWFILE_PATH="$DOTFILES_DIR/brew/.config/brew/Brewfile"
 if [ -f "$BREWFILE_PATH" ]; then
   print_message "Installing Homebrew packages from $BREWFILE_PATH..."
   brew bundle --file="$BREWFILE_PATH"
